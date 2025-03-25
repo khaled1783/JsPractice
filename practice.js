@@ -97,24 +97,65 @@ else {
 //0-49,F
 
 
-let score = Number(prompt("Enter student's score:"));
-let Grade;
+// let score = Number(prompt("Enter student's score:"));
+// let Grade;
 
-if (score >= 80 && score <= 100) {
-    Grade = "A";
-} else if (score >= 70 && score <= 79) {
-    Grade = "B";
-} else if (score >= 60 && score <= 69) {
-    Grade = "C";
-} else if (score >= 50 && score <= 59) {
-    Grade = "D";
-} else if (score >= 0 && score < 50) {
-    Grade = "F";
-} else {
-     Grade = "Invalid score";  
- }
+// if (score >= 80 && score <= 100) {
+//     Grade = "A";
+// } else if (score >= 70 && score <= 79) {
+//     Grade = "B";
+// } else if (score >= 60 && score <= 69) {
+//     Grade = "C";
+// } else if (score >= 50 && score <= 59) {
+//     Grade = "D";
+// } else if (score >= 0 && score < 50) {
+//     Grade = "F";
+// } else {
+//      Grade = "Invalid score";  
+//  }
 
-console.log("Student's Grade is:", Grade);
+// console.log("Student's Grade is:", Grade);
 
 
 
+//Loops practice
+//Q1 Print all even numbers from 0 to 100
+//let count=0;
+let num;
+for(let num =0; num<=100;num++){
+    if(num % 2 ===0 ){
+    console.log(num, "is even");    }
+}
+
+
+
+//Q1 using while loop
+let j=0;
+while (j<=100){
+    if(j % 2 ===0 ){
+        console.log(j, "is even");
+    
+      }
+      j++
+}
+
+
+//Q2--Create a game where you start with any random game number.Ask the user to keep guessing the game number untill the user enter the corret value.
+
+//let n =17;
+
+// let guessNumber=prompt("Guess the number");
+// console.log(guessNumber);
+// while(n != guessNumber ) {
+//     guessNumber=prompt(" Sorry!Guess the number again");
+
+// }
+
+// console.log("Congrasulations! You have gueseed the correct number");
+
+//String Practice
+//Q1 Prompt the user to enter their full name.Generate a username for them based on the input.Start username with @,followed by their full name and ending with the full name length
+
+let fullName= prompt("Enter your Full Name:")
+let userName= "@" + fullName + fullName.length;
+console.log(userName);
