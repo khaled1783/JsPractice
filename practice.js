@@ -156,6 +156,59 @@ while (j<=100){
 //String Practice
 //Q1 Prompt the user to enter their full name.Generate a username for them based on the input.Start username with @,followed by their full name and ending with the full name length
 
-let fullName= prompt("Enter your Full Name:")
-let userName= "@" + fullName + fullName.length;
-console.log(userName);
+// let fullName= prompt("Enter your Full Name:")
+// let userName= "@" + fullName + fullName.length;
+// console.log(userName);
+
+
+
+//Array Practice 
+
+//Q1 For a given array with marks of students ->[85,97,44,37,76,60].Find
+//the average marks of the entire class.
+
+
+let mark=[85,97,44,37,76,60];
+let sum =0;
+
+for(let i =0;i<mark.length;i++){
+sum +=mark[i];
+
+}
+
+let avg = sum/mark.length;
+
+console.log(avg);
+
+
+//Q2 For a given array with prices of 5 items -> [250,645,300,900,50].ALL items have an offer of 10% OFF on them .Change the array to store final price after applying offer.
+
+
+let items = [250,645,300,900,50];
+
+for (let i=0;i<items.length;i++){
+
+    let offer = items[i]/10;
+    items[i]-=offer;
+}
+
+console.log(items);
+
+// Q3 Create an array to store companies -> “Bloomberg”, “Microsoft”,“Uber”,“Google”,“IBM”,“Netflix”
+
+// a. Remove the first company from the array
+
+// b. Remove Uber & Add Ola in its place
+
+// c. Add Amazon at the end 
+
+let companies = ["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+console.log(companies);
+
+companies.shift();
+console.log(companies);
+
+companies.push("Amazon");
+console.log(companies);
+
+
