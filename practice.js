@@ -211,4 +211,52 @@ console.log(companies);
 companies.push("Amazon");
 console.log(companies);
 
+//Functions & Methods
+// Q1Create a function using the “function” keyword that takes a String as an argument &
+// returns the number of vowels in the string.
+
+function countVowels(str)
+{   let count =0;
+    for(let i =0;i<str.length;i++){
+        if(str[i]==="a"|| str[i]==="e"|| str[i]==="i" || str[i]==="o" || str[i]==="u"){
+            count++;
+        }
+    }
+console.log(count);
+}
+
+countVowels("abc");
+countVowels("khaled");
+// Q2 Create same task with arrow function
+
+let countVowel=(str)=>
+{   let count =0;
+    for(let i =0;i<str.length;i++){
+        if(str[i]==="a"|| str[i]==="e"|| str[i]==="i" || str[i]==="o" || str[i]==="u"){
+            count++;
+        }
+    }
+console.log(count);
+}
+
+countVowel("abc");
+countVowel("khaled");
+
+//For a given array of numbers, print the square of each value using the forEach loop.
+
+
+let array=[1,2,3,4];
+
+
+array.forEach((val)=>{
+    console.log(val**2);
+})
+
+//use filter
+let newArray = array.filter ((val)=>{
+   return val%2===0;
+})
+
+console.log(newArray);
+
 
